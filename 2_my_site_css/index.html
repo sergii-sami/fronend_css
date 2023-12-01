@@ -9,9 +9,11 @@
         <style>
             /* General css section */
             body {
+                background-color: aliceblue;
+            }
+            main {
                 width: 90%; 
                 margin: auto;
-                background-color: aliceblue;
             }
             .centered {
                 width: 70%;
@@ -21,6 +23,11 @@
             h1 {
                 display: inline;
             }
+            header {
+                background-color:darkturquoise;
+                padding: 30px;
+            }
+            
             
             /* Navigation */
             nav {
@@ -55,7 +62,7 @@
             /* Menu btn */
             #menu_btn {
                 position: fixed;
-                top: 20px;
+                top: 70px;
                 right: 10px;
                 z-index: +1;
                 border-radius: 12px;
@@ -84,6 +91,7 @@
                 <img src="images/eagle-logo.png" alt="eagle-logo from logologo.com" width="100">
             </span>
             <h1>Birds in Finland</h1>
+
         </header>
         <button id="menu_btn" onclick="openMenu()" name="menu">Menu</button>
         <nav id="navmenu">
@@ -119,6 +127,7 @@
             </div>
             <hr>
         </nav>
+        <hr>
         <main>
             <section>
                 <h2 style="margin-left: 10px;">Eagle</h2>
