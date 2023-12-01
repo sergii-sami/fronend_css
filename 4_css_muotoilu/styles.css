@@ -1,0 +1,20 @@
+body {
+    background-color: aliceblue;
+}
+main{
+    background-color: white;
+    margin: 10px 20%;
+    border: 2px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3 {
+    font-family: Helvetica, Arial, sans-serif;    
+    background-color: azure;
+}
+p {
+    margin-left: 50px;
+}
+ul {
+    margin-left: 100px;
+}
