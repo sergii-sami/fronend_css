@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="images/favicon32x32.png">
+        <style>
+            body {
+                width: 90%; 
+                margin: auto;
+            }
+            .centered {
+                width: 70%;
+                margin: auto;
+                text-align: center;
+            }
+            h1 {
+                display: inline;
+            }
+            table, th, td {
+                border: 1px solid black;
+                text-align: center;
+            }
+            .name-cell {
+                background-color: honeydew;
+            }
+        </style>
+        <title>Birds in Finland</title>
+    </head>
+    <body>
+        <header>
+            <span class="header-logo">
+                <img src="images/eagle-logo.png" alt="eagle-logo from logologo.com" width="100">
+            </span>
+            <h1>Birds in Finland</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="example.html">Predators</a></li>
+                    <li>
+                        <ul>
+                            <li><a href="index.html">Eagle</a></li>
+                            <li><a href="example.html">Owl</a></li>
+                            <li><a href="example.html">Hawk</a></li>
+                        </ul>
+                    </li>
+                <li><a href="example.html">Waterfowls</a></li>
+                    <li>
+                        <ul>
+                            <li><a href="example.html">Duck</a></li>
+                            <li><a href="example.html">Gull</a></li>
+                            <li><a href="example.html">Swan</a></li>
+                        </ul>
+                    </li>
+                <li><a href="example.html">Landfowls</a></li>
+                    <li>
+                        <ul>
+                            <li><a href="example.html">Sparrow</a></li>
+                            <li><a href="example.html">Crow</a></li>
+                            <li><a href="example.html">Dove</a></li>
+                        </ul>
+                    </li>
+            </ul>
+            <hr>
+        </nav>
+        <main>
+            <section>
+                <h2 style="margin-left: 10px;">Eagle</h2>
+                <p>
+                    Lets talk about one of the most beautiful birds in the world - eagle. It lives also in Finland.
+                </p>
+                <!-- Otin carousel esimerkki Bootstrap nettisivulta -->
+                <div id="carouselExample" class="carousel slide centered">
+                    <div class="carousel-inner">
+                      <div class="carousel-item">
+                        <img src="https://www.allaboutbirds.org/guide/assets/photo/60329061-1280px.jpg" class="d-block w-100" alt="eagle1">
+                      </div>
+                      <div class="carousel-item active">
+                        <img src="https://www.allaboutbirds.org/guide/assets/photo/306062281-1280px.jpg" class="d-block w-100" alt="eagle2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://www.allaboutbirds.org/guide/assets/photo/60328971-1280px.jpg" class="d-block w-100" alt="eagle3">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <!-- Bootstrapin koodi loppu -->
+                <div style="text-align:center;">
+                    <p>
+                        <b>Pictures 1-3.</b> Eagles in the nature.<br>
+                        <i>Source site <a href="https://www.allaboutbirds.org/">here</a></i> &copy;
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>
+                        Types of eagles have been met in Finland:
+                    </p>
+                    <ul>
+                        <li>Golden eagle (<i>Aquila chrysaetos</i>)</li>
+                        <li>White-tailed eagle (<i>Haliaeetus albicilla</i>)</li>
+                        <li>Steppe eagle (<i>Aquila nipalensis</i>)</li>
+                        <li>Imperial eagle (<i>Aquila heliaca</i>)</li>
+                    </ul>
+                </div>
+                <div class="centered">
+                    <h3>About eagles</h3>
+                    <table style="width: 100%;">
+                        <tr style="font-weight: bold; background-color: azure;">
+                            <td>Type</td>
+                            <td>Conservation status</td>
+                            <td>Call of eagle</td>
+                            <td>Wikipedia article</td>
+                        </tr>
+                        <tr>
+                            <td class="name-cell">Golden eagle</td>
+                            <td>Least Concern</td>
+                            <td><span><audio controls><source src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Golden_Eagle_%28Aquila_chrysaetos%29_%28W1CDR0001387_BD6%29.ogg" type="audio/ogg"></audio></span></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Golden_eagle" target="_blank">Read more</a></td>
+                        </tr>
+                        <tr>
+                            <td class="name-cell">White-tailed eagle</td>
+                            <td>Least Concern</td>
+                            <td><span><audio controls><source src="calls/merikotka.mp3" type="audio/mpeg"></audio></span></td>
+                            <td><a href="https://en.wikipedia.org/wiki/White-tailed_eagle" target="_blank">Read more</a></td>
+                        </tr>
+                        <tr>
+                            <td class="name-cell">Steppe eagle</td>
+                            <td>Endangered</td>
+                            <td><span><audio controls><source src="calls/arokotka.mp3" type="audio/mpeg"></audio></span></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Steppe_eagle" target="_blank">Read more</a></td>
+                        </tr>
+                        <tr>
+                            <td class="name-cell">Imperial eagle</td>
+                            <td>Vulnerable</td>
+                            <td><span><audio controls><source src="calls/keisarikotka.mp3" type="audio/mpeg"></audio></span></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Eastern_imperial_eagle" target="_blank">Read more</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <footer class="centered">
+            <hr>
+            <p style="font-size: small;">
+                This page is made by Sergii Mishchaniuk, 31.10.2023 <br>
+                All rights reserved &copy;
+            </p>
+        </footer>
+    </body>
+</html>
