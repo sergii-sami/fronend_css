@@ -60,6 +60,12 @@
                 width: 100%;
                 border-collapse: collapse;
             }
+            table > caption {
+                text-align: center;
+                caption-side: top;
+                font-weight: bold;
+                font-size: large;
+            }
             th, td {
                 text-align: center;
                 padding: 5px;
@@ -195,15 +201,17 @@
                         <li>Imperial eagle (<i>Aquila heliaca</i>)</li>
                     </ul>
                 </div>
-                <div class="centered">
-                    <h3>About eagles</h3>
-                    <table>
+                <table>
+                    <caption>About eagles</caption>
+                    <thead>
                         <tr>
-                            <th>Type</td>
-                            <th>Conservation status</td>
-                            <th>Call of eagle</td>
-                            <th>Wikipedia article</td>
+                            <th>Type</th>
+                            <th>Conservation status</th>
+                            <th>Call of eagle</th>
+                            <th>Wikipedia article</th>
                         </tr>
+                    </thead>
+                    <tbody>
                         <tr>
                             <td>Golden eagle</td>
                             <td>Least Concern</td>
@@ -228,8 +236,8 @@
                             <td><span><audio controls><source src="calls/keisarikotka.mp3" type="audio/mpeg"></audio></span></td>
                             <td><a href="https://en.wikipedia.org/wiki/Eastern_imperial_eagle" target="_blank">Read more</a></td>
                         </tr>
-                    </table>
-                </div>
+                    </tbody>
+                </table>
             </section>
         </main>
         <footer class="centered">
