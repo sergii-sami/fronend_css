@@ -11,23 +11,28 @@
             body {
                 background-color: aliceblue;
             }
+            header {
+                background-color:darkturquoise;
+                padding: 30px;
+            }
             main {
                 width: 90%; 
                 margin: auto;
+            }
+            h1 {
+                display: inline;
+            }
+            h2 {
+                margin-left: 10px;
             }
             .centered {
                 width: 70%;
                 margin: auto;
                 text-align: center;
             }
-            h1 {
-                display: inline;
+            footer > p {
+                font-size: small;
             }
-            header {
-                background-color:darkturquoise;
-                padding: 30px;
-            }
-            
             
             /* Navigation */
             nav {
@@ -51,12 +56,12 @@
             }
 
             /* Table style */
-            table, th, td {
-                border: 1px solid black;
-                text-align: center;
+            table {
+                width: 100%;
             }
-            .name-cell {
-                background-color: honeydew;
+            table, th, td {
+                border-collapse: collapse;
+                text-align: center;
             }
 
             /* Menu btn */
@@ -130,7 +135,7 @@
         <hr>
         <main>
             <section>
-                <h2 style="margin-left: 10px;">Eagle</h2>
+                <h2>Eagle</h2>
                 <p>
                     Lets talk about one of the most beautiful birds in the world - eagle. It lives also in Finland.
                 </p>
@@ -178,33 +183,33 @@
                 </div>
                 <div class="centered">
                     <h3>About eagles</h3>
-                    <table style="width: 100%;">
-                        <tr style="font-weight: bold; background-color: azure;">
+                    <table>
+                        <tr>
                             <td>Type</td>
                             <td>Conservation status</td>
                             <td>Call of eagle</td>
                             <td>Wikipedia article</td>
                         </tr>
                         <tr>
-                            <td class="name-cell">Golden eagle</td>
+                            <td>Golden eagle</td>
                             <td>Least Concern</td>
                             <td><span><audio controls><source src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Golden_Eagle_%28Aquila_chrysaetos%29_%28W1CDR0001387_BD6%29.ogg" type="audio/ogg"></audio></span></td>
                             <td><a href="https://en.wikipedia.org/wiki/Golden_eagle" target="_blank">Read more</a></td>
                         </tr>
                         <tr>
-                            <td class="name-cell">White-tailed eagle</td>
+                            <td>White-tailed eagle</td>
                             <td>Least Concern</td>
                             <td><span><audio controls><source src="calls/merikotka.mp3" type="audio/mpeg"></audio></span></td>
                             <td><a href="https://en.wikipedia.org/wiki/White-tailed_eagle" target="_blank">Read more</a></td>
                         </tr>
                         <tr>
-                            <td class="name-cell">Steppe eagle</td>
+                            <td>Steppe eagle</td>
                             <td>Endangered</td>
                             <td><span><audio controls><source src="calls/arokotka.mp3" type="audio/mpeg"></audio></span></td>
                             <td><a href="https://en.wikipedia.org/wiki/Steppe_eagle" target="_blank">Read more</a></td>
                         </tr>
                         <tr>
-                            <td class="name-cell">Imperial eagle</td>
+                            <td>Imperial eagle</td>
                             <td>Vulnerable</td>
                             <td><span><audio controls><source src="calls/keisarikotka.mp3" type="audio/mpeg"></audio></span></td>
                             <td><a href="https://en.wikipedia.org/wiki/Eastern_imperial_eagle" target="_blank">Read more</a></td>
@@ -215,7 +220,7 @@
         </main>
         <footer class="centered">
             <hr>
-            <p style="font-size: small;">
+            <p>
                 This page is made by Sergii Mishchaniuk, 31.10.2023 <br>
                 All rights reserved &copy;
             </p>
