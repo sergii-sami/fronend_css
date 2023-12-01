@@ -11,6 +11,7 @@
             body {
                 width: 90%; 
                 margin: auto;
+                background-color: aliceblue;
             }
             .centered {
                 width: 70%;
@@ -25,6 +26,10 @@
             nav {
                 display: flex;
                 background-color:lightblue;
+                position: fixed;
+                right: 10px;
+                z-index: +1;
+                margin-top: 10px;
             }
             .nav-headers {
                 list-style-image: url(icons/bird_icon.jpg);
@@ -46,17 +51,42 @@
             .name-cell {
                 background-color: honeydew;
             }
+
+            /* Menu btn */
+            #menu_btn {
+                position: fixed;
+                top: 20px;
+                right: 10px;
+                z-index: +1;
+                border-radius: 12px;
+                background-color: lightblue;
+                padding: 5px 15px;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+            }
         </style>
+        <script>
+            function openMenu() {
+                let menu_bar = document.getElementById("navmenu");
+                if (menu_bar.hidden) {
+                    menu_bar.hidden = false;
+                } else {
+                    menu_bar.hidden = true;
+                }
+                
+            }
+        </script>
         <title>Birds in Finland</title>
     </head>
-    <body>
+    <body onload="openMenu()">
         <header>
             <span class="header-logo">
                 <img src="images/eagle-logo.png" alt="eagle-logo from logologo.com" width="100">
             </span>
             <h1>Birds in Finland</h1>
         </header>
-        <nav>
+        <button id="menu_btn" onclick="openMenu()" name="menu">Menu</button>
+        <nav id="navmenu">
             <div>
                 <ul>
                     <li class="nav-headers"><a href="example.html">Predators</a></li>
