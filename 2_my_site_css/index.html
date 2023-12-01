@@ -58,11 +58,25 @@
             /* Table style */
             table {
                 width: 100%;
-            }
-            table, th, td {
                 border-collapse: collapse;
-                text-align: center;
             }
+            th, td {
+                text-align: center;
+                padding: 5px;
+            }
+            th {
+                background-color:lightseagreen;
+            }
+            td {
+                font-size: small;
+            }
+            tr:nth-child(even) {
+                background-color: beige;
+            }
+            tr:nth-child(odd) {
+                background-color:bisque;
+            }
+            tr:hover {background-color: lightgray;}
 
             /* Menu btn */
             #menu_btn {
@@ -185,10 +199,10 @@
                     <h3>About eagles</h3>
                     <table>
                         <tr>
-                            <td>Type</td>
-                            <td>Conservation status</td>
-                            <td>Call of eagle</td>
-                            <td>Wikipedia article</td>
+                            <th>Type</td>
+                            <th>Conservation status</td>
+                            <th>Call of eagle</td>
+                            <th>Wikipedia article</td>
                         </tr>
                         <tr>
                             <td>Golden eagle</td>
