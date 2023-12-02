@@ -5,34 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Verkkosivuston perustaitto</title>
         <style>
+            header {
+                background-color: green;
+                height: 200px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header > p {
+                text-align: center;
+                color: white;
+                font-size: 34px;
+                font-weight: bold;
+            }
             nav {
-               padding: 1px;
                 background-color: black;
                 color: white;
                 text-transform: uppercase;
-                font-family: Arial, Helvetica, sans-serif;
             }
             ul {
                 display: flex;
                 justify-content: space-around;
-                align-items: center;
+                padding: 5px 0px;
                 list-style-type: none;
-            }
-            header {
-                background-color: green;
-                height: 100px;
             }
         </style>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li>Etusivu</li>
-                <li>Sisältö</li>
-                <li>Yhteys</li>
-            </ul>
-        </nav>
         <header>
+            <nav>
+                <ul>
+                    <li>Etusivu</li>
+                    <li>Sisältö</li>
+                    <li>Yhteys</li>
+                </ul>
+            </nav>
             <p>
                 Tämä on headeri
             </p>
