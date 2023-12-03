@@ -8,13 +8,15 @@
         <meta name="keywords" content="frontend, news, technologies, html, css, javascript">
         <meta name="author" content="Sergii Mishchaniuk">
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
     </head>
     <body class="main-grid-container">
         <header>
             <img class="banner-img" src="images/banner.jpg" alt="code banner">
         </header>
         <nav>
-            <ul class="menu-list">
+            <button id="menu_btn" onclick="openMenu()" name="menu">Menu</button>
+            <ul class="menu-list" id="navmenu">
                 <li>
                     <a href="index.html">Etusivu</a>
                 </li>
