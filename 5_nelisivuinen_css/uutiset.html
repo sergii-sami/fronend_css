@@ -3,24 +3,35 @@
     <head>
         <title>Uutiset</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="uutiset frontendista">
         <meta name="keywords" content="frontend, uutiset">
         <meta name="author" content="Sergii Mishchaniuk">
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
+    <body class="main-grid-container">
         <header>
-            <img src="images/banner.jpg" alt="code banner">
+            <img class="banner-img" src="images/banner.jpg" alt="code banner">
         </header>
         <nav>
-            <a href="index.html">Etusivu</a> |
-            <a href="uutiset.html">Uutiset</a> |
-            <a href="teknologiat.html">HTML, CSS ja Javascript</a> |
-            <a href="lomake.html">Yhteydenotto</a>
+            <ul class="menu-list">
+                <li>
+                    <a href="index.html">Etusivu</a>
+                </li>
+                <li>
+                    <a href="uutiset.html">Uutiset</a>
+                </li>
+                <li>
+                    <a href="teknologiat.html">HTML, CSS ja Javascript</a>
+                </li>
+                <li>
+                    <a href="lomake.html">Yhteydenotto</a>
+                </li>
+            </ul>
         </nav>
         <main>
             <h1>Uutiset</h1>
-            <article>
+            <article id="uutinen1">
                 <h2>Ensimmäisen uutisen otsikko</h2>
                 <p>
                     Vivamus luctus tincidunt lacus. Aliquam eu odio fermentum, vulputate quam nec, egestas purus. Suspendisse iaculis ex in rutrum efficitur. 
@@ -31,7 +42,7 @@
                 </p>
                 <img src="images/description_image.jpg" alt="uutiset" width="300">
             </article>
-            <article>
+            <article id="uutinen2">
                 <h2>Toisen uutisen otsikko</h2>
                 <p>
                     Duis mollis, diam quis faucibus porta, neque ante viverra justo, eget pharetra arcu tortor quis velit. Donec id ante eget elit pretium porttitor. 
@@ -41,7 +52,7 @@
                 </p>
                 <img src="images/description_image.jpg" alt="uutiset" width="300">
             </article>
-            <article>
+            <article id="uutinen3">
                 <h2>Kolmannen uutisen otsikko</h2>
                 <p>
                     Nunc rhoncus gravida purus, a consequat mauris tincidunt in. Duis sit amet felis non orci hendrerit pulvinar. Ut at nibh justo. 

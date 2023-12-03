@@ -3,20 +3,31 @@
     <head>
         <title>Frondend-teknologiat</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="frontend teknologiat">
         <meta name="keywords" content="frontend, html, css, javascript">
         <meta name="author" content="Sergii Mishchaniuk">
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
+    <body class="main-grid-container">
         <header>
-            <img src="images/banner.jpg" alt="code banner">
+            <img class="banner-img" src="images/banner.jpg" alt="code banner">
         </header>
         <nav>
-            <a href="index.html">Etusivu</a> |
-            <a href="uutiset.html">Uutiset</a> |
-            <a href="teknologiat.html">HTML, CSS ja Javascript</a> |
-            <a href="lomake.html">Yhteydenotto</a>
+            <ul class="menu-list">
+                <li>
+                    <a href="index.html">Etusivu</a>
+                </li>
+                <li>
+                    <a href="uutiset.html">Uutiset</a>
+                </li>
+                <li>
+                    <a href="teknologiat.html">HTML, CSS ja Javascript</a>
+                </li>
+                <li>
+                    <a href="lomake.html">Yhteydenotto</a>
+                </li>
+            </ul>
         </nav>
         <main>
             <h1>Frontend-kehityksessä tarvittavat teknologiat</h1>
@@ -49,6 +60,22 @@
                 </p>
             </section>
         </main>
+        <div class="right-container">
+            <h3>Uutiset</h3>
+            <div>
+                <ul class="news-feed">
+                    <li>
+                        <a href="uutiset.html#uutinen1">Ensimmäisen uutisen otsikko</a>
+                    </li>
+                    <li>
+                        <a href="uutiset.html#uutinen2">Toisen uutisen otsikko</a>
+                    </li>
+                    <li>
+                        <a href="uutiset.html#uutinen3">Kolmannen uutisen otsikko</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <footer>
             <hr>
             <p>&copy; Sergii Mishchaniuk 2023</p>
