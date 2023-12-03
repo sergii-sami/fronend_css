@@ -99,3 +99,17 @@ ul li {
     opacity: 1;
     right: 5px;
 }
+#dialog_btn {
+    margin: 20px 5px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.800);
+    padding: 5px 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+#dialog_btn:hover {
+    background-color: aliceblue;
+    color: black;
+}
