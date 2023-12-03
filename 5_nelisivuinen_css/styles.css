@@ -63,3 +63,39 @@ ul li {
     padding: 10px;
     background-color: rgb(191, 255, 255);
 }
+
+/* Contact button style */
+#contact_btn {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: +1;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.800);
+    padding: 5px 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+}
+#contact_btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: large;
+    transition: 0.5s;
+}
+#contact_btn span:after {
+    content: 'Ota yhteyttä';
+    position: absolute;
+    opacity: 0;
+    top: 4px;
+    right: 5px;
+    transition: 0.5s;
+}
+#contact_btn:hover span {
+    padding-right: 150px;
+}
+#contact_btn:hover span:after {
+    opacity: 1;
+    right: 5px;
+}
