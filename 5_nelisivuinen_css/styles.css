@@ -31,7 +31,7 @@ footer {
 ul li {
     padding-bottom: 10px;
 }
-.main-grid-container {
+.body-grid-container {
     display: grid;
     grid-template-areas: 
         'header header header header header header'
@@ -164,15 +164,22 @@ ul li {
 
 /* Responsive */
 @media (max-width: 800px) {
-    nav {
-        grid-area: main; 
-        z-index: +1;
+    .body-grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'header'
+        'menu'
+        'main'
+        'right'
+        'footer';
     }
-    .menu-grid-container {
-        padding: 5px;
+    main {
+        margin-left: 5px;
+        margin-right: 5px;
     }
     .right-grid-container {
-        display:none;
+        border: none;
     }
     .news-article-flex, .news-article-flex:nth-of-type(even) {
       flex-direction: column;
