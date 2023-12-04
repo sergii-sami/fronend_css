@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Verkkosivuston perustaitto</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header {
+                background-color: green;
+                height: 200px;
+            }
+            header > p {
+                text-align: center;
+                color: white;
+                font-size: 34px;
+                font-weight: bold;
+            }
+            nav {
+                background-color: black;
+                color: white;
+                text-transform: uppercase;
+            }
+            ul {
+                display: flex;
+                justify-content: space-around;
+                padding: 5px 0px;
+                list-style-type: none;
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            main {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            h1 {
+                color: grey;
+            }
+            .flex-container {
+                display: flex;
+                justify-content: space-between;
+                background-color:whitesmoke;
+            }
+            .flex-container > div {
+                margin: 10px;
+            }
+            img {
+                max-width: 100%;
+            }
+            footer {
+                background-color: grey;
+                height: 100px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            footer > p {
+                color: white;
+                font-size: 34px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>Etusivu</li>
+                    <li>Sisältö</li>
+                    <li>Yhteys</li>
+                </ul>
+            </nav>
+            <p>
+                Tämä on headeri
+            </p>
+        </header>
+        <main>
+            <div class="flex-container">
+                <div>
+                    <h1>What is Lorem Ipsum</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div>
+                    <img src="image.jpg" alt="example image">
+                </div>
+            </div>
+        </main>        
+        <footer>
+            <p>
+                Tämä on footeri
+            </p>
+        </footer>    
+    </body>
+</html>

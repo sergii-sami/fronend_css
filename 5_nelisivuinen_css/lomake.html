@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <title>Yhteydenotto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="feedback form">
+        <meta name="keywords" content="frontend, subscription, news, contacts, feedback">
+        <meta name="author" content="Sergii Mishchaniuk">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body class="main-grid-container">
+        <header>
+            <img class="banner-img" src="images/banner.jpg" alt="code banner">
+        </header>
+        <nav>
+            <button id="menu_btn" onclick="openMenu()" name="menu">Menu</button>
+            <ul class="menu-list" id="navmenu">
+                <li>
+                    <a href="index.html">Etusivu</a>
+                </li>
+                <li>
+                    <a href="uutiset.html">Uutiset</a>
+                </li>
+                <li>
+                    <a href="teknologiat.html">HTML, CSS ja Javascript</a>
+                </li>
+                <li>
+                    <a href="lomake.html">Yhteydenotto</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div>
+                <h1>Tervetuloa</h1>
+                <form name="feedback" action="/" method="post">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="client-name">Nimi:</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="name" id="client-name" maxlength="70" size="30" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="client-email">Sähköposti:</label>
+                                </td>
+                                <td>
+                                    <input type="email" name="email" id="client-email" maxlength="70" size="30" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Minulle aiheista mieluisin on:
+                                </td>
+                                <td>
+                                    <label><input type="radio" name="opinion" id="opinion-opt1" value="option-html"> HTML </label> <br>
+                                    <label><input type="radio" name="opinion" id="opinion-opt2" value="option-css"> CSS </label><br>
+                                    <label><input type="radio" name="opinion" id="opinion-opt3" value="option-javascript"> JavaScript </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="client-message">Viesti:</label>
+                                </td>
+                                <td>
+                                    <textarea name="message" id="client-message" cols="30" rows="5"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="client-subscription">Tilaan uutiskirjen</label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="subscription" id="client-subscription">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <input type="submit" value="Lähetä"> -->
+                </form>
+                <button id="dialog_btn" onclick="showDialog()">Lähetä</button>
+            </div>
+        </main>
+        <dialog id="myDialog">
+            Emme voi vielä vastata sinulle 🙍 <button value="cancel" onclick="showDialog()">Cancel</button>
+        </dialog>
+        <footer>
+            <hr>
+            <p>&copy; Sergii Mishchaniuk 2023</p>
+        </footer>
+    </body>
+</html>
