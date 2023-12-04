@@ -86,7 +86,7 @@ ul li {
     max-width: 200px;
     margin: auto 10px;
 }
-.news-list-flex:nth-of-type(even) {
+.news-article-flex:nth-of-type(even) {
     flex-direction: row-reverse;
 }
 
