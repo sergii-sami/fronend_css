@@ -23,7 +23,7 @@ main {
 }
 footer {
     grid-area: footer;
-    background-color:rgba(0, 0, 0, 0.800);
+    background-color:rgba(0, 0, 0);
     text-align: center;
     font-size: 15px;
     color:white;
@@ -49,7 +49,7 @@ ul li {
     border-width: 2px;
     border-color: black;
     padding: 10px;
-    background-color:rgba(23, 23, 23, 0.8);
+    background-color:rgba(23, 23, 23, 0.95);
 }
 .menu-grid-container a {
     color: white;
@@ -61,17 +61,22 @@ ul li {
     padding: 10px;
 }
 .news-feed {
-    list-style-type: none;
-    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
     margin-right: 20px;
-    padding: 0px;
+    padding: 0;
+    list-style-type: none;
+}
+.news-feed-li {
+    display: flex;
+    align-items: center;
+}
+.news-feed-li a {
+    margin-left: 3px;
 }
 .news-feed-img {
     width: 50px;
-}
-.news-feed-a {
-    margin-top: auto;
-    margin-bottom: auto;
 }
 .news-article-flex {
     display: flex;
@@ -80,7 +85,7 @@ ul li {
     padding-bottom: 10px;
     border-bottom-style: dotted;
     border-width: 2px;
-    border-color: rgba(0, 0, 0, 0.800);
+    border-color: rgba(0, 0, 0);
 }
 .news-article-flex img {
     max-width: 200px;
@@ -99,13 +104,14 @@ ul li {
     border-width: 2px;
     border-color: white;
     border-radius: 12px;
-    background-color: rgba(44, 44, 44, 0.8);
+    background-color: rgba(44, 44, 44);
     padding: 5px 15px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: large;
     color: white;
     cursor: pointer;
+    opacity: 1;
 }
 .contact-btn {
     position: fixed;
@@ -144,7 +150,7 @@ ul li {
 .dialog-btn {
     margin: 20px 5px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.800);
+    background-color: rgba(44, 44, 44);
     padding: 5px 15px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -158,17 +164,17 @@ ul li {
 
 /* Responsive */
 @media (max-width: 800px) {
+    nav {
+        grid-area: main; 
+        z-index: +1;
+    }
     .menu-grid-container {
         padding: 5px;
-        font-size: small;
     }
     .right-grid-container {
         display:none;
     }
     .news-article-flex, .news-article-flex:nth-of-type(even) {
       flex-direction: column;
-    }
-    .dialog-btn {
-        font-size: small;
     }
 }
