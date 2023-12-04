@@ -10,10 +10,16 @@
 
         <!-- Table style -->
         <style>
-            table, th, td {
+            table {
                 border: 2px outset;
+                border-color: grey;
                 text-align: center;
-                padding: 5px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            th, td {
+                border: 2px outset;
+                border-color: rgb(158, 158, 158);
+                padding: 3px 10px;
             }
             table caption {
                 text-align: left;
@@ -21,9 +27,11 @@
             th, tr td:first-child {
                 background-color: rgb(0, 132, 255);
                 color: white;
+                font-size: large;
+                font-weight: normal;
             }
             td:empty {
-                background-color: azure;
+                background-color:rgb(235, 235, 250);
             }
             .kokous {
                 background-color: rgb(0, 228, 0);
@@ -34,8 +42,15 @@
             .demot {
                 background-color: yellow;
             }
+            td span:nth-of-type(1) {
+                font-size: large;
+            }
             td span:nth-of-type(2) {
                 font-style: italic;
+                font-size: small;
+            }
+            footer p {
+                margin-left: 50px;
             }
         </style>
         <!-- end of table style -->
