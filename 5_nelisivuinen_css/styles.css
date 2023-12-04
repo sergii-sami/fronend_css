@@ -42,17 +42,20 @@ ul li {
 }
 .menu-grid-container {
     list-style-position: inside;
+    list-style-type: none;
     font-weight: bold;
-    border-style: solid;
+    border-style: outset;
     border-radius: 12px;
-    border-width: 1px;
+    border-width: 2px;
     border-color: black;
     padding: 10px;
-    background-color:rgb(222, 254, 254);
+    background-color:rgba(23, 23, 23, 0.8);
+}
+.menu-grid-container a {
+    color: white;
 }
 .right-grid-container {
     grid-area: right;
-    background-color: azure;
     border-left-style: solid;
     border-width: 1px;
     padding: 10px;
@@ -102,6 +105,7 @@ ul li {
     font-weight: bold;
     font-size: large;
     color: white;
+    cursor: pointer;
 }
 .contact-btn {
     position: fixed;
@@ -157,7 +161,6 @@ ul li {
     .menu-grid-container {
         padding: 5px;
         font-size: small;
-        list-style: none;
     }
     .right-grid-container {
         display:none;
