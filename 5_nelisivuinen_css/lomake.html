@@ -12,11 +12,11 @@
     </head>
     <body class="main-grid-container">
         <header>
-            <img class="banner-img" src="images/banner.jpg" alt="code banner">
+            <!-- header banner as background image -->
         </header>
         <nav>
-            <button id="menu_btn" onclick="openMenu()" name="menu">Menu</button>
-            <ul class="menu-list" id="navmenu">
+            <button id="menu_btn" class="menu-btn" onclick="openMenu()">Menu</button>
+            <ul class="menu-grid-container" id="navmenu">
                 <li>
                     <a href="index.html">Etusivu</a>
                 </li>
@@ -32,59 +32,57 @@
             </ul>
         </nav>
         <main>
-            <div>
-                <h1>Tervetuloa</h1>
-                <form name="feedback" action="/" method="post">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <label for="client-name">Nimi:</label>
-                                </td>
-                                <td>
-                                    <input type="text" name="name" id="client-name" maxlength="70" size="30" required>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="client-email">Sähköposti:</label>
-                                </td>
-                                <td>
-                                    <input type="email" name="email" id="client-email" maxlength="70" size="30" required>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Minulle aiheista mieluisin on:
-                                </td>
-                                <td>
-                                    <label><input type="radio" name="opinion" id="opinion-opt1" value="option-html"> HTML </label> <br>
-                                    <label><input type="radio" name="opinion" id="opinion-opt2" value="option-css"> CSS </label><br>
-                                    <label><input type="radio" name="opinion" id="opinion-opt3" value="option-javascript"> JavaScript </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="client-message">Viesti:</label>
-                                </td>
-                                <td>
-                                    <textarea name="message" id="client-message" cols="30" rows="5"></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="client-subscription">Tilaan uutiskirjen</label>
-                                </td>
-                                <td>
-                                    <input type="checkbox" name="subscription" id="client-subscription">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!-- <input type="submit" value="Lähetä"> -->
-                </form>
-                <button id="dialog_btn" onclick="showDialog()">Lähetä</button>
-            </div>
+            <h1>Tervetuloa</h1>
+            <form name="feedback" action="/" method="post">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="client-name">Nimi:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="name" id="client-name" maxlength="70" size="30" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="client-email">Sähköposti:</label>
+                            </td>
+                            <td>
+                                <input type="email" name="email" id="client-email" maxlength="70" size="30" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Minulle aiheista mieluisin on:
+                            </td>
+                            <td>
+                                <label><input type="radio" name="opinion" id="opinion-opt1" value="option-html"> HTML </label> <br>
+                                <label><input type="radio" name="opinion" id="opinion-opt2" value="option-css"> CSS </label><br>
+                                <label><input type="radio" name="opinion" id="opinion-opt3" value="option-javascript"> JavaScript </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="client-message">Viesti:</label>
+                            </td>
+                            <td>
+                                <textarea name="message" id="client-message" cols="30" rows="5"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="client-subscription">Tilaan uutiskirjen</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="subscription" id="client-subscription">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- <input type="submit" value="Lähetä"> -->
+            </form>
+            <button id="dialog_btn" class="dialog-btn" onclick="showDialog()">Lähetä</button>
         </main>
         <dialog id="myDialog">
             Emme voi vielä vastata sinulle 🙍 <button value="cancel" onclick="showDialog()">Cancel</button>

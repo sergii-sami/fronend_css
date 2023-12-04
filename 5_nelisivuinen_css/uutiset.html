@@ -12,11 +12,11 @@
     </head>
     <body class="main-grid-container">
         <header>
-            <img class="banner-img" src="images/banner.jpg" alt="code banner">
+            <!-- header banner as background image -->
         </header>
         <nav>
-            <button id="menu_btn" onclick="openMenu()" name="menu">Menu</button>
-            <ul class="menu-list" id="navmenu">
+            <button id="menu_btn" class="menu-btn" onclick="openMenu()">Menu</button>
+            <ul class="menu-grid-container" id="navmenu">
                 <li>
                     <a href="index.html">Etusivu</a>
                 </li>
@@ -34,7 +34,7 @@
         <main>
             <h1>Uutiset</h1>
             <div>
-                <article id="uutinen1" class="news-list-flex">
+                <article id="uutinen1" class="news-article-flex">
                     <div>
                         <h2>Ensimmäisen uutisen otsikko</h2>
                         <p>
@@ -47,7 +47,7 @@
                     </div>
                     <img src="images/description_image.jpg" alt="uutiset">
                 </article>
-                <article id="uutinen2" class="news-list-flex">
+                <article id="uutinen2" class="news-article-flex">
                     <div>
                         <h2>Toisen uutisen otsikko</h2>
                         <p>
@@ -59,7 +59,7 @@
                     </div>
                     <img src="images/description_image.jpg" alt="uutiset">
                 </article>
-                <article id="uutinen3" class="news-list-flex">
+                <article id="uutinen3" class="news-article-flex">
                     <div>
                         <h2>Kolmannen uutisen otsikko</h2>
                         <p>
@@ -73,7 +73,7 @@
                 </article>
             </div>
         </main>
-        <button name="contact_btn" id="contact_btn" onclick="location.replace('lomake.html')"><span>✉️</span></button>
+        <button id="contact_btn" class="contact-btn" onclick="location.replace('lomake.html')"><span>✉️</span></button>
         <footer>
             <hr>
             <p>&copy; Sergii Mishchaniuk 2023</p>
