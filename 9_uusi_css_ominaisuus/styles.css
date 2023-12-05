@@ -1,6 +1,10 @@
-body, .wrapper-grid {
+html, body {
     height: 100%;
     width: 100%;
+}
+body {
+    margin-left: auto;
+    margin-right: auto;
 }
 .wrapper-grid {
     display: grid;
@@ -10,7 +14,7 @@ body, .wrapper-grid {
         'bottom bottom bottom'
         'footer footer footer';
     grid-template-rows: auto 1fr auto auto;
-    row-gap: 20px;
+    column-gap: 20px;
     background-color: aliceblue;
 }
 .header {
@@ -31,4 +35,11 @@ body, .wrapper-grid {
 .footer {
     grid-area: footer;
     background-color: black;
+}
+.code-preview {
+    border-radius: 16px;
+    box-shadow: inset 0 0 0 2px rgba(17,25,46,.1);
+    background-color: #11192e;
+    color: #f7f8fb;
+    font-size: 14px;
 }
