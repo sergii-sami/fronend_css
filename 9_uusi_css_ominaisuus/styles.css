@@ -46,7 +46,5 @@ body {
     background-color: #11192e;
     color: #f7f8fb;
     font-size: 14px;
-}
-.code-preview code {
-    margin-left: 10px;
+    padding-left: 10px;
 }
