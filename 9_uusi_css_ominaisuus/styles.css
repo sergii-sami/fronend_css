@@ -1,0 +1,34 @@
+body, .wrapper-grid {
+    height: 100%;
+    width: 100%;
+}
+.wrapper-grid {
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        'main main right'
+        'bottom bottom bottom'
+        'footer footer footer';
+    grid-template-rows: auto 1fr auto auto;
+    row-gap: 20px;
+    background-color: aliceblue;
+}
+.header {
+    grid-area: header;
+    background-color: darkgray;
+}
+.main {
+    grid-area: main;
+}
+.right-container {
+    grid-area: right;
+    background-color: darkgray;
+}
+.bottom-container {
+    grid-area: bottom;
+    background-color: grey;
+}
+.footer {
+    grid-area: footer;
+    background-color: black;
+}
