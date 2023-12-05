@@ -8,8 +8,9 @@
         <meta name="author" content="Sergii, Antti">
         <link rel="stylesheet" href="styles.css">
         <title>Tutustu uusiin ominaisuuksiin</title>
+        <script src="script.js"></script>
     </head>
-    <body>
+    <body onload="hideOnLoad()">
         <div class="wrapper-grid">
             <header class="header">
                 <!-- Heading or banner image -->
@@ -17,18 +18,18 @@
             </header>
             <main class="main">
                 <!-- Presentation of css feature -->
-                <article>
+                <article id="article">
                     <h2>Main presentation title</h2>
                     <p>
                         This is main presentation text
                     </p>
                 </article>
-                <figure>
+                <figure id="figure">
                     <figcaption>Presentation image</figcaption>
                     <img src="picture.jpg" alt="layout example">
                 </figure>
             </main>
-            <aside class="right-container">
+            <aside class="right-container" id="code">
                 <!-- Code example -->
                 <div class="code-bar">
                     <pre class="code-preview">
@@ -40,7 +41,9 @@
             </aside>
             <nav class="bottom-container">
                 <!-- Navigation/control links or buttons -->
-                This is bottom container
+                <button id="presentation_btn" class="presentation-btn" onclick="showHideRegions('presentation')">Presentation</button>
+                <button id="image_btn" class="image-btn" onclick="showHideRegions('image')">Show example</button>
+                <button id="preview_btn" class="preview-btn" onclick="showHideRegions('code')">Code preview</button>
             </nav>
             <footer class="footer">
                 <!-- Short description about us -->

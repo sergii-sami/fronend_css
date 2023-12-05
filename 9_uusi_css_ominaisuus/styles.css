@@ -33,6 +33,7 @@ body {
 .bottom-container {
     grid-area: bottom;
     background-color: grey;
+    padding: 10px;
 }
 .footer {
     grid-area: footer;
