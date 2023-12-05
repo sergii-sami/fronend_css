@@ -1,26 +1,29 @@
-/* Look at https://dev.to/niorad/keeping-the-footer-at-the-bottom-with-css-grid-15mf to fix footer problem */
+html, body {
+    height: 100%;
+    width: 100%;
+}
 body {
     background-color: aliceblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 header {
     grid-area: header;
-    margin-right: auto;
-    margin-left: auto;
+    height: 150px;
+    background-image: url('images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 nav {
-    grid-area: menu;
-    background-color: azure;
+    grid-area: menu; 
 }
 main {
     grid-area: main;
 }
 footer {
     grid-area: footer;
-    background-color:rgba(0, 0, 0, 0.800);
+    background-color:rgba(0, 0, 0);
     text-align: center;
     font-size: 15px;
     color:white;
@@ -28,86 +31,108 @@ footer {
 ul li {
     padding-bottom: 10px;
 }
-article img {
-    max-width: 200px;
-    margin: auto 10px;
-}
-.main-grid-container {
+.body-grid-container {
     display: grid;
-    grid-template-areas: 'header header header header header header'
+    grid-template-areas: 
+        'header header header header header header'
         'menu main main main right right'
         'footer footer footer footer footer footer';
+    grid-template-rows: auto 1fr auto;
     column-gap: 20px;
 }
-.right-container {
+.menu-grid-container {
+    list-style-position: inside;
+    list-style-type: none;
+    font-weight: bold;
+    border-style: outset;
+    border-radius: 12px;
+    border-width: 2px;
+    border-color: black;
+    padding: 10px;
+    background-color:rgba(23, 23, 23, 0.95);
+}
+.menu-grid-container a {
+    color: white;
+}
+.right-grid-container {
     grid-area: right;
-    background-color: azure;
     border-left-style: solid;
     border-width: 1px;
     padding: 10px;
 }
-.banner-img {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
 .news-feed {
-    list-style-type: none;
-    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
     margin-right: 20px;
-    padding: 0px;
+    padding: 0;
+    list-style-type: none;
+}
+.news-feed-li {
+    display: flex;
+    align-items: center;
+}
+.news-feed-li a {
+    margin-left: 3px;
 }
 .news-feed-img {
     width: 50px;
 }
-.news-feed-a {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.menu-list {
-    list-style-position: inside;
-    font-weight: bold;
-    border-style: solid;
-    border-radius: 12px;
-    border-width: 1px;
-    border-color: black;
-    padding: 10px;
-    background-color:rgb(222, 254, 254);
-}
-.news-list-flex {
+.news-article-flex {
     display: flex;
     align-content: space-between;
     margin: 20px auto;
+    padding-bottom: 10px;
     border-bottom-style: dotted;
     border-width: 2px;
-    border-color: rgba(0, 0, 0, 0.800);
-    padding-bottom: 10px;
+    border-color: rgba(0, 0, 0);
 }
-.news-list-flex:nth-of-type(even) {
+.news-article-flex img {
+    max-width: 200px;
+    margin: auto 10px;
+}
+.news-article-flex:nth-of-type(even) {
     flex-direction: row-reverse;
 }
 
 /* Buttons */
-#contact_btn {
+.menu-btn {
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 12px;
+    background-color: rgba(44, 44, 44);
+    padding: 5px 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    cursor: pointer;
+    opacity: 1;
+}
+.contact-btn {
     position: fixed;
-    bottom: 80px;
-    right: 10px;
     z-index: +1;
+    bottom: 70px;
+    right: 10px;
+    padding: 5px 15px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.800);
-    padding: 5px 15px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     color: white;
 }
-#contact_btn span {
+.contact-btn span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     font-size: large;
     transition: 0.5s;
 }
-#contact_btn span:after {
+.contact-btn span:after {
     content: 'Ota yhteyttä';
     position: absolute;
     opacity: 0;
@@ -115,56 +140,48 @@ article img {
     right: 5px;
     transition: 0.5s;
 }
-#contact_btn:hover span {
+.contact-btn:hover span {
     padding-right: 150px;
 }
-#contact_btn:hover span:after {
+.contact-btn:hover span:after {
     opacity: 1;
     right: 5px;
 }
-#dialog_btn {
+.dialog-btn {
     margin: 20px 5px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.800);
+    background-color: rgba(44, 44, 44);
     padding: 5px 15px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: large;
     color: white;
 }
-#dialog_btn:hover {
+.dialog-btn:hover,  .menu-btn:hover{
     background-color: aliceblue;
     color: black;
-}
-#menu_btn {
-    margin: 10px 5px 0px 10px;
-    border-radius: 12px;
-    background-color:rgba(0, 0, 0, 0.800);
-    padding: 5px 15px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: large;
-    color: white;
 }
 
 /* Responsive */
 @media (max-width: 800px) {
-    .news-list-flex, .news-list-flex:nth-of-type(even) {
+    .body-grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'header'
+        'menu'
+        'main'
+        'right'
+        'footer';
+    }
+    main {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .right-grid-container {
+        border: none;
+    }
+    .news-article-flex, .news-article-flex:nth-of-type(even) {
       flex-direction: column;
-    }
-    .right-container {
-        display:none;
-    }
-    .menu-list {
-        padding: 5px;
-        font-size: small;
-        list-style: none;
-    }
-    #dialog_btn {
-        font-size: small;
-    }
-    #menu_btn {
-        font-size: small;
-        padding: 2px;
     }
 }

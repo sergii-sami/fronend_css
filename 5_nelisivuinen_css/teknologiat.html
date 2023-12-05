@@ -10,13 +10,13 @@
         <link rel="stylesheet" href="styles.css">
         <script src="script.js"></script>
     </head>
-    <body class="main-grid-container">
+    <body class="body-grid-container">
         <header>
-            <img class="banner-img" src="images/banner.jpg" alt="code banner">
+            <!-- header banner as background image -->
         </header>
         <nav>
-            <button id="menu_btn" onclick="openMenu()" name="menu">Menu</button>
-            <ul class="menu-list" id="navmenu">
+            <button id="menu_btn" class="menu-btn" onclick="openMenu()">Menu</button>
+            <ul class="menu-grid-container" id="navmenu">
                 <li>
                     <a href="index.html">Etusivu</a>
                 </li>
@@ -62,26 +62,26 @@
                 </p>
             </section>
         </main>
-        <div class="right-container">
+        <div class="right-grid-container">
             <h3>Uutiset</h3>
             <div>
                 <ul class="news-feed">
-                    <li>
+                    <li class="news-feed-li">
                         <img class="news-feed-img" src="images/description_image.jpg" alt="news">
                         <a href="uutiset.html#uutinen1">Ensimmäisen uutisen otsikko</a>
                     </li>
-                    <li>
+                    <li class="news-feed-li">
                         <img class="news-feed-img" src="images/description_image.jpg" alt="news">
                         <a href="uutiset.html#uutinen2">Toisen uutisen otsikko</a>
                     </li>
-                    <li>
+                    <li class="news-feed-li">
                         <img class="news-feed-img" src="images/description_image.jpg" alt="news">
                         <a href="uutiset.html#uutinen3">Kolmannen uutisen otsikko</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <button name="contact_btn" id="contact_btn" onclick="location.replace('lomake.html')"><span>✉️</span></button>
+        <button id="contact_btn" class="contact-btn" onclick="location.replace('lomake.html')"><span>✉️</span></button>
         <footer>
             <hr>
             <p>&copy; Sergii Mishchaniuk 2023</p>
