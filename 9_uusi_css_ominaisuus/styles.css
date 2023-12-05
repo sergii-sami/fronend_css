@@ -64,5 +64,5 @@ figcaption {
     background: #696fb0;
     color: #fff;
     cursor: pointer;
-    transition: color .25s,background .25s
+    transition: color .25s, background .25s;
 }
