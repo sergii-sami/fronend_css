@@ -7,6 +7,7 @@ body {
     margin-right: auto;
 }
 .wrapper-grid {
+    min-height: 99%;
     display: grid;
     grid-template-areas: 
         'header header header'
@@ -16,6 +17,7 @@ body {
     grid-template-rows: auto 1fr auto auto;
     column-gap: 20px;
     background-color: aliceblue;
+    margin-top: 0;
 }
 .header {
     grid-area: header;
@@ -35,6 +37,7 @@ body {
 .footer {
     grid-area: footer;
     background-color: black;
+    color: white;
 }
 .code-preview {
     border-radius: 16px;
@@ -42,4 +45,7 @@ body {
     background-color: #11192e;
     color: #f7f8fb;
     font-size: 14px;
+}
+.code-preview code {
+    margin-left: 10px;
 }
