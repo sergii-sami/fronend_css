@@ -66,3 +66,7 @@ figcaption {
     cursor: pointer;
     transition: color .25s, background .25s;
 }
+.copy-btn:hover {
+    background-color: #f7f8fb;
+    color: black;
+}
