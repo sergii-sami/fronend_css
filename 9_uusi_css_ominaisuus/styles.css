@@ -86,3 +86,19 @@ figcaption {
 .check-mark-btn {
     padding: 0 2px;
 }
+
+@media (max-width: 800px) {
+    .wrapper-grid {
+        display: grid;
+        grid-template-areas: 
+            'header'
+            'main'
+            'right'
+            'bottom'
+            'footer';
+        grid-template-columns: repeat(5, 'auto');
+        column-gap: 20px;
+        background-color: aliceblue;
+        margin-top: 0;
+    }
+}
